@@ -1,13 +1,14 @@
 import gsap from "gsap";
 import { ScrollTrigger, SplitText } from "gsap/all"
+import NavBar from "./components/NavBar";
 
 gsap.registerPlugin(ScrollTrigger, SplitText); // you only have to do it once to make sure the plugins are used globally - putting it in App file is the way to go
 
 const App = () => {
   return (
-    <div className="flex-center">
-      <h1 className="text-3xl">Hello</h1>
-    </div>
+    <main>
+      <NavBar />
+    </main>
   )
 }
 
